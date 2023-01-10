@@ -1,0 +1,101 @@
+.Cart {
+  border: 0px solid;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  margin-top: 2rem;
+  width: 800px;
+  margin: auto;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.cardheader {
+  background: #f1f2f3;
+  border: 0px solid;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  color: rgb(169, 169, 169);
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  padding: 1rem;
+}
+
+.flexbetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 800px;
+  margin: 1rem auto 2rem auto;
+}
+
+.link {
+  text-decoration: underline;
+  color: cornflowerblue;
+}
+
+.productBox {
+  display: flex;
+  align-items: center;
+}
+
+.paddingsm {
+  padding: 1.5rem;
+  padding-bottom: 0.2rem;
+}
+
+.removeItem {
+  font-weight: 700;
+  font-size: 12px;
+  color: #92140c;
+  cursor: pointer;
+}
+
+.emptyCart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  text-align: center;
+}
+
+.emptyCart h4 {
+  margin: 0.5rem 0 2rem 0;
+}
+
+.emptyCart .link {
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #fff;
+  background: #000;
+}
+
+@media screen and (max-width: 765px) {
+  .Cart,
+  .flexbetween {
+    width: 100%;
+  }
+  .flexbetween h2 {
+    font-size: 18px;
+  }
+  .flexbetween a {
+    font-size: 12px;
+  }
+  .wrapper {
+    display: block;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .removeItem{
+    display: inline;
+  }
+  .productBox img{
+    width: 80px;
+    margin-right: .5rem;
+  }
+}
